@@ -20,7 +20,7 @@
       </v-col>
       <v-col cols="5" sm="6" id="headimg" class="hide">
 <div style="position: absolute; z-index: 9999;" class="mt-16">
-<v-img src="/2.jpg" contain max-height="300" :width="200">
+<v-img src="/mypic.jpg" contain max-height="350" :width="200">
   
 </v-img>
 </div>
@@ -32,8 +32,8 @@
 <div>
 <v-row>
  <v-col cols="12" sm="6">
-  <div class="circle bg-orange">
-    <v-img src="/benz.png" max-height="300">
+  <div class="circle">
+    <v-img src="/mypic.jpg" max-height="300" class="circle">
 
     </v-img>
   </div>
@@ -49,8 +49,11 @@
 </div>
 <h4 class="mt-n4"> I AM a Creative Web Developer</h4>
 <h4>And Designer</h4>
-<p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nam recusandae voluptas aut ducimus modi beatae repellat quaerat inventore explicabo, aliquid ratione vitae amet cumque itaque dolores atque et numquam.</p> <br>
-<p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nam recusandae voluptas aut ducimus modi beatae repellat quaerat inventore explicabo, aliquid ratione vitae amet cumque itaque dolores atque et numquam.</p>
+<p class="text-grey">I am  detail oriented, highly organized, analytical and great with managing relationships</p> <br>
+<p class="text-grey">I have excellent web Development skills and a passion for developing web applications or improving existing one</p> <br>
+<p class="text-grey">I am very deligent in the area of decision making and problem solving</p> <br>
+<p class="text-grey">I love teamwork and i am always open and ready to learn from others and share ideas and views</p> <br>
+<p class="text-grey">I have 3 years experience as a front end developer and i have worked with numerous organizations</p>
 </v-col>
  
 </v-row>
@@ -78,19 +81,19 @@
 <div class="child">
 <v-btn><v-icon class="text-white " color="orange">mdi-laptop</v-icon></v-btn>
 <h3 class="ml-3 mt-4">Web Development</h3>
-<p class="text-grey ml-3 mt-4 text-caption">Lorem, ipsum dolor sit <br> amet consectetur adipisicing<br>  elit. Aut, accusamus!</p>
+<p class="text-grey ml-3 mt-4 text-caption">My priority is to give you <br>the best service <br>experience in Web development</p>
 </div>
 
 <div class="child">
 <v-btn><v-icon class="text-white " color="orange">mdi-cellphone-text</v-icon></v-btn>
-<h3 class="ml-3 mt-4">App Design</h3>
-<p class="text-grey ml-3 mt-4 text-caption">Lorem, ipsum dolor sit <br> amet consectetur adipisicing<br>  elit. Aut, accusamus!</p>
+<h3 class="ml-3 mt-4">Web App Management</h3>
+<p class="text-grey ml-3 mt-4 text-caption">I am a seasoned web app <br>manager accros all platforms <br>  with 3 years experience in this particular field</p>
 </div>
 
 <div class="child">
 <v-btn><v-icon class="text-white " color="orange">mdi-monitor</v-icon></v-btn>
 <h3 class="ml-3 mt-4">Web Design</h3>
-<p class="text-grey ml-3 mt-4 text-caption">Lorem, ipsum dolor sit <br> amet consectetur adipisicing<br>  elit. Aut, accusamus!</p>
+<p class="text-grey ml-3 mt-4 text-caption">Do u need a design for your  <br>dream web app? Then<br> my priority is to make your dreams and imagined web app real</p>
 </div>
       </v-col>
     </v-row>
@@ -99,7 +102,7 @@
 </v-col >
 <v-col cols="12" sm="12" id="pages ">
    <div class="show text-center mt-4 w-100">
-  <h2 id="offer">What We Offer</h2>
+  <h2 id="offer">The Technologies I work with</h2>
   <div style="width: 120px; margin: 0 auto;">
   <v-slider v-model="slider2" color="orange" class="label-track-color"></v-slider>
   </div>
@@ -133,7 +136,7 @@
 </v-col>
 <v-col cols="12" sm="12" id="pages">
    <div class="show text-center mt-4 w-100">
-  <h2 id="offer">What We Offer</h2>
+  <h2 id="offer">My Projects Timeline</h2>
   <div style="width: 120px; margin: 0 auto;">
   <v-slider v-model="slider2" color="orange" class="label-track-color"></v-slider>
   </div>
@@ -159,10 +162,10 @@
   <div class="child">
     <h1>Contact Info</h1>
     <v-btn class="mt-10" variant="outlined"> <v-icon>mdi-map-marker</v-icon></v-btn> <br>
-    <span class="text-caption">Your street gyt, your Area dream</span> <br>
+    <span class="text-caption">4 apatapiti street off Futa Southgate, Akure, Ondo State, Nigeria</span> <br>
     <v-btn class="mt-10" variant="outlined"><v-icon>mdi-phone</v-icon></v-btn> <br>
     <span class="text-caption">(+234)9035355746</span> <br> 
-    <span class="text-caption">(+234)9035355746</span> <br>
+    <span class="text-caption">(+234)8116009623</span> <br>
     <v-btn class="mt-10" variant="outlined"><v-icon>mdi-email</v-icon></v-btn> <br>
     <span class="text-caption">Omotosolilhenxy@gmail.com</span> <br> 
     <span class="text-caption">Dr.blacqk@gmail.com</span>
@@ -223,7 +226,7 @@ methods: {
 },
 setup()  {
   return {
-
+slider2: 50,
     items: [
         {
           src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
