@@ -49,11 +49,11 @@
 </div>
 <h4 class="mt-n4"> I AM a Creative Web Developer</h4>
 <h4>And Designer</h4>
-<p class="text-grey">I am  detail oriented, highly organized, analytical and great with managing relationships</p> <br>
-<p class="text-grey">I have excellent web Development skills and a passion for developing web applications or improving existing one</p> <br>
-<p class="text-grey">I am very deligent in the area of decision making and problem solving</p> <br>
-<p class="text-grey">I love teamwork and i am always open and ready to learn from others and share ideas and views</p> <br>
-<p class="text-grey">I have 3 years experience as a front end developer and i have worked with numerous organizations</p>
+<p class="text-grey">I am  detail oriented, highly organized, analytical and great with managing relationships.</p> <br>
+<p class="text-grey">I have excellent web development skills and a passion for developing web applications or improving existing one.</p> <br>
+<p class="text-grey">I am very diligent in the area of decision making and problem solving.</p> <br>
+<p class="text-grey">I love teamwork and i am always open and ready to learn from others and share ideas and views.</p> <br>
+<p class="text-grey">I have 3 years experience as a front end developer and i have worked with numerous organizations.</p>
 </v-col>
  
 </v-row>
@@ -151,7 +151,7 @@
         <v-carousel-item
           v-for="(item,i) in items"
           :key="i"
-          :src="item.src"
+          :src="item.img"
           cover
         ></v-carousel-item>
       </v-carousel>
@@ -229,16 +229,25 @@ setup()  {
 slider2: 50,
     items: [
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          img: '/s1.png',
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+          img: '/s2.png',
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          img: '/s3.png',
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+          img: '/s4.png',
+        },
+        {
+          img: '/s5.png',
+        },
+        {
+          img: '/s6.png',
+        },
+        {
+          img: '/s7.png',
         },
       ],
       itemscol: [
@@ -252,13 +261,16 @@ slider2: 50,
           img: '/css.png'
         },
         {
-          img: '/2.jpg'
+          img: '/tailwind.png'
         },
         {
-          img: '/2.jpg'
+          img: '/sass.png'
         },
         {
-          img: '/2.jpg'
+          img: '/vue.png'
+        },
+        {
+          img: '/vuejs.png'
         },
       ]
   }
