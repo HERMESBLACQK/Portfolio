@@ -174,18 +174,30 @@
 <span class="text-caption">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deserunt, consequuntur debitis, veritatis similique sequi reprehenderit doloribus eligendi non optio natus in? Non magni mollitia veniam sed quidem culpa impedit?
 </span>
+<v-form method="post">
 <v-row class="mt-10">
-  <v-col cols="12" sm="6">
-<v-text-field label="Name" persistent-hint="" variant="outlined"></v-text-field>
-  </v-col>
-  <v-col cols="12" sm="6">
-<v-text-field label="Phone No" persistent-hint="" variant="outlined"></v-text-field>
-  </v-col>
-</v-row>
-<v-textarea label="Message" persistent-hint="" variant="outlined"></v-textarea>
-<v-btn color="orange" class="mt-2">Submit Now</v-btn>
+ 
+  <v-col cols="12" sm="6"> 
+   
+      <v-text-field label="Name" persistent-hint="" variant="outlined" id="name"></v-text-field>
+        </v-col>
+  <v-col cols="12" sm="6"> 
+   
+      <v-text-field label="Email" persistent-hint="" variant="outlined" id="email"></v-text-field>
+        </v-col>
+  <v-col cols="12" sm="6"> 
+   
+      <v-text-field label="Subject" persistent-hint="" variant="outlined" id="subject"></v-text-field>
+        </v-col>
+        <v-col cols="12" sm="6">
+      <v-text-field label="Phone No" persistent-hint="" variant="outlined" id="phone"></v-text-field>
+        </v-col>
+      </v-row>
+      <v-textarea label="Message" persistent-hint="" variant="outlined" id="message"></v-textarea>
+      <v-btn color="orange" class="mt-2" type="submit" id="sendbtn">Submit Now</v-btn>
+  
+      </v-form>
 </v-col>
-
 </v-row>
 
 </v-container>
@@ -196,10 +208,12 @@
 <script>
 import NavBar from '@/components/NavBar.vue'
 
+
 export default ({
   name: 'HomeView',
 components: {
-  NavBar 
+  NavBar ,
+
 },
 methods: {
   scroll(refName) {
@@ -248,8 +262,11 @@ setup()  {
 }
 
 });
-</script>
 
+</script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script> 
+<script src="../send.js"></script>
 
 <style>
 .v-container{
