@@ -10,7 +10,7 @@
         <h1 class="text-grey">Hello</h1>
         <h1 class="text-white">I'M Omotoso Taiwo</h1>
         <span class="text-grey" >Web Developer & Designer</span> <br>
-        <v-btn tile dark class="text-orange mt-8" variant="outlined">Contact Me</v-btn>
+        <v-btn tile dark class="text-orange mt-8" variant="outlined" id="contact">Contact Me</v-btn>
         </div>
       </v-col>
       <v-col cols="2" id="hide">
@@ -18,7 +18,7 @@
 <v-icon>mdi-chevron-double-down</v-icon>
 </div>
       </v-col>
-      <v-col cols="5" id="">
+      <v-col cols="5" sm="6" id="headimg" class="hide">
 <div style="position: absolute; z-index: 9999;" class="mt-16">
 <v-img src="/2.jpg" contain max-height="300" :width="200">
   
@@ -319,7 +319,7 @@ setup()  {
 }
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1500px){
 
 #contact{
   text-align: center;
@@ -333,8 +333,10 @@ setup()  {
   margin: 0;
 
 }
-#hide{
-  display: none;
+#headimg{
+  position: absolute;
+  left: 60%;
+  top: 0;
 }
 .circle{
 
@@ -342,22 +344,32 @@ setup()  {
 
 }
 .box{
-  border: 2px solid white;
   width: 100%;
   text-align: center;
-  
   z-index: 9999;
 }
 .imgHover{
   padding: 0;
 }
-
+.head{
+  padding:0 5px;
+}
 
 
 
 
 }
+@media only screen and (max-width: 600px){
+  #hide{
+    display: none;
+}
+.hide{
+  display: none;
+}
 
+
+
+}
 
 
 
