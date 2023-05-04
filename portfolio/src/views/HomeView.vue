@@ -264,9 +264,7 @@ setup()  {
 });
 
 </script>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script> 
-<script src="../send.js"></script>
+
 
 <style>
 .v-container{
