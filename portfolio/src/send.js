@@ -21,7 +21,7 @@ btn.addEventListener('click', function(e) {
                   message => alert(message)
                 );
 
-})
+});
 
 
 
