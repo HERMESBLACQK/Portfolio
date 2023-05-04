@@ -13,48 +13,51 @@
         <v-btn tile dark class="text-orange mt-8" variant="outlined">Contact Me</v-btn>
         </div>
       </v-col>
-      <v-col cols="2">
+      <v-col cols="2" >
 <div style="position: absolute;z-index: 9999;bottom: 0;margin: 0 auto;left: 0;right: 0;text-align: center; ">
 <v-icon>mdi-chevron-double-down</v-icon>
 </div>
       </v-col>
-      <v-col cols="5" id="hide">
+      <v-col cols="5" id="">
 <div style="position: absolute; z-index: 9999;" class="mt-16">
-<v-img src="../assets/benz.png" contain max-height="300"></v-img>
+<v-img src="/2.jpg" contain max-height="300" :width="200">
+  
+</v-img>
 </div>
       </v-col>
      </v-row>
   </div>
 
-<v-col cols="12" class="ml-16" id="about">
+<v-col cols="12" class="showml-16" id="about">
 <div>
-<v-row class="">
-  <v-col cols="12" sm="12" >
-    <div class="circle bg-orange" >
+<v-row>
+ <v-col cols="12" sm="6">
+  <div class="circle bg-orange">
+    <v-img src="/benz.png" max-height="300">
 
-      <v-img src="../assets/benz.png" fit max-height="300"></v-img>
-    </div>
-  </v-col>
-
-  <v-col cols="12" sm="12" class="">
-    <div class="show text-center mt-4 w-100">
-  <h2 id="offer">About Me</h2>
-  <div style="width: 120px; margin: 0 auto;">
-  <v-slider v-model="slider2" color="orange" class="label-track-color"></v-slider>
+    </v-img>
   </div>
-</div>
-<h4 class="mt-4">I Am a creative web Developer </h4>
-<h4>Web Designer</h4>
-<p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Modi unde accusamus quo porro ratione natus ut vero repellendus <br> repudiandae iure rerum, odit suscipit expedita necessitatibus nam. <br> Expedita magni excepturi sed.</p>
 
-<p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Modi unde accusamus quo porro ratione natus ut vero repellendus <br> repudiandae iure rerum, odit suscipit expedita necessitatibus nam. <br> Expedita magni excepturi sed.</p>
-<v-btn tile dark color="orange"  class="mt-4">Download Resume</v-btn>
-  </v-col>
+ </v-col>
+<v-col cols="12" sm="6">
+<h5 class="mt-16">About Me</h5>
+<div style="width: 120px;">
+<v-slider v-model="slider2" color="orange label-track-color">
+
+</v-slider>
+</div>
+<h4 class="mt-n4"> I AM a Creative Web Developer</h4>
+<h4>And Designer</h4>
+<p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nam recusandae voluptas aut ducimus modi beatae repellat quaerat inventore explicabo, aliquid ratione vitae amet cumque itaque dolores atque et numquam.</p> <br>
+<p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nam recusandae voluptas aut ducimus modi beatae repellat quaerat inventore explicabo, aliquid ratione vitae amet cumque itaque dolores atque et numquam.</p>
+</v-col>
+ 
 </v-row>
 
 
 </div>
 </v-col>
+<v-divider></v-divider>
 
 <v-col cols="12" class="padd" id="portfolio">
   <div class="first" id="project">
@@ -340,8 +343,14 @@ setup()  {
 }
 .box{
   border: 2px solid white;
+  width: 100%;
+  text-align: center;
+  
+  z-index: 9999;
 }
-
+.imgHover{
+  padding: 0;
+}
 
 
 
