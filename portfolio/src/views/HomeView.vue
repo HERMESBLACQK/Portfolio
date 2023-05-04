@@ -13,7 +13,7 @@
         <v-btn tile dark class="text-orange mt-8" variant="outlined">Contact Me</v-btn>
         </div>
       </v-col>
-      <v-col cols="2" >
+      <v-col cols="2" id="hide">
 <div style="position: absolute;z-index: 9999;bottom: 0;margin: 0 auto;left: 0;right: 0;text-align: center; ">
 <v-icon>mdi-chevron-double-down</v-icon>
 </div>
