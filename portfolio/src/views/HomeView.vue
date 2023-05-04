@@ -343,11 +343,7 @@ setup()  {
   margin-left: 0;
 
 }
-.box{
-  width: 100%;
-  text-align: center;
-  z-index: 9999;
-}
+
 .imgHover{
   padding: 0;
 }
@@ -366,6 +362,16 @@ setup()  {
 .hide{
   display: none;
 }
+.box{
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
+  position: absolute;
+}
+
+
+
+
 
 
 
