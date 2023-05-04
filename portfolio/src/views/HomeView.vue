@@ -10,7 +10,7 @@
         <h1 class="text-grey">Hello</h1>
         <h1 class="text-white">I'M Omotoso Taiwo</h1>
         <span class="text-grey" >Web Developer & Designer</span> <br>
-        <v-btn tile dark class="text-orange mt-8" variant="outlined" id="contact">Contact Me</v-btn>
+        <v-btn tile dark class="text-orange mt-8" variant="outlined"  @click="scroll('contact')">Contact Me</v-btn>
         </div>
       </v-col>
       <v-col cols="2" id="hide">
@@ -28,7 +28,7 @@
      </v-row>
   </div>
 
-<v-col cols="12" class="showml-16" id="about">
+<v-col cols="12" class="show ml-4" id="about">
 <div>
 <v-row>
  <v-col cols="12" sm="6">
@@ -40,7 +40,8 @@
 
  </v-col>
 <v-col cols="12" sm="6">
-<h5 class="mt-16">About Me</h5>
+  
+<h3 class="mt-16">About Me</h3>
 <div style="width: 120px;">
 <v-slider v-model="slider2" color="orange label-track-color">
 
@@ -130,7 +131,7 @@
   <v-divider class="my-4"></v-divider>
 
 </v-col>
-<v-col cols="12" sm="12" id="pages ">
+<v-col cols="12" sm="12" id="pages">
    <div class="show text-center mt-4 w-100">
   <h2 id="offer">What We Offer</h2>
   <div style="width: 120px; margin: 0 auto;">
@@ -141,7 +142,7 @@
     
 
     </v-col>
-<v-row class="pa-12">
+<v-row class="pa-8">
 
   <v-carousel hide-delimiters>
         <v-carousel-item
@@ -199,6 +200,12 @@ export default ({
   name: 'HomeView',
 components: {
   NavBar 
+},
+methods: {
+  scroll(refName) {
+    const element = document.getElementById(refName);
+    element.scrollIntoView({behavior: "smooth"});
+  }
 },
 setup()  {
   return {
@@ -326,7 +333,7 @@ setup()  {
 }
 .show{
   width: 100%;
-  margin: 0;
+  margin-left: 0;
 }
 #offer{
   width: 100%;
@@ -350,11 +357,24 @@ setup()  {
 .head{
   padding:0 5px;
 }
-
+.showmenu{
+  display: none;
+}
 
 
 
 }
+@media only screen and (max-width: 850px){
+  .hidemenu{
+    display: none;
+  }
+  .showmenu{
+    display: inline-block;
+  }
+}
+
+
+
 @media only screen and (max-width: 600px){
   #hide{
     display: none;
@@ -365,8 +385,9 @@ setup()  {
 .box{
   width: 100%;
   text-align: center;
-  z-index: 9999;
+  z-index: 999;
   position: absolute;
+  left: 30%;
 }
 
 
