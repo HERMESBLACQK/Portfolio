@@ -12,6 +12,7 @@
 
 import FooterApp from './components/FooterApp.vue'
 
+
 export default {
   name: 'App',
 components: {

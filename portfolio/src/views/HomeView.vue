@@ -182,7 +182,7 @@
  
   <v-col cols="12" sm="6"> 
    
-      <v-text-field label="Name" persistent-hint="" variant="outlined" id="name"></v-text-field>
+      <v-text-field label="Name" persistent-hint="" variant="outlined" id="name" name="name"></v-text-field>
         </v-col>
   <v-col cols="12" sm="6"> 
    
@@ -204,25 +204,30 @@
 </v-row>
 
 </v-container>
+<formSend />
   </v-app>
 
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue'
+import formSend from '@/components/ContactUs.vue'
+
 
 
 export default ({
   name: 'HomeView',
 components: {
   NavBar ,
+  formSend
 
 },
 methods: {
   scroll(refName) {
     const element = document.getElementById(refName);
     element.scrollIntoView({behavior: "smooth"});
-  }
+  },
+
 },
 setup()  {
   return {
