@@ -53,7 +53,7 @@
              Thanks for contacting us we will get back to you immediately
             </v-card-text>
             <v-card-actions>
-              <v-btn color="primary" block @click="dialog = false" url="https://portfolio-five-sepia-47.vercel.app">Close Dialog</v-btn>
+              <v-btn color="orange" block @click="dialog = false"> <a href="https://portfolio-five-sepia-47.vercel.app">OK</a> </v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
@@ -93,7 +93,10 @@ export default {
 </script>
 
 <style>
-
+a {
+  text-decoration: none;
+  color: orange;
+}
 </style>
 
 

@@ -1,11 +1,18 @@
 <template>
      <v-footer fluid>
       <v-card elevation="0" rounded="0" width="100%" class=" text-center d-inline-block" fluid>
-        <v-card-text  v-for="item in foot" :key="item" class="d-inline-block">
-          <v-btn variant="plain" color="orange text-h6" class="mr-4">
-<v-icon> {{ item.icon }} </v-icon>
+        <v-card-text>
+          <v-btn variant="plain" color="orange text-h6" class="mr-4" >
+<a href="https://www.facebook.com/lilhenxy.omotosho.9?mibextid=ZbWKwL"><v-icon> mdi-facebook</v-icon></a>
           </v-btn>
-   
+          <v-btn variant="plain" color="orange text-h6" class="mr-4" >
+<a href="https://twitter.com/DrBlacqk"><v-icon> mdi-twitter</v-icon></a>
+          </v-btn>
+        
+          <v-btn variant="plain" color="orange text-h6" class="mr-4" >
+            <a href="https://www.linkedin.com/in/omotoso-taiwo-17798a250"><v-icon> mdi-linkedin</v-icon></a>
+
+          </v-btn>
         
         </v-card-text>
         <v-card-subtitle>
@@ -23,17 +30,7 @@ name: 'FooterApp',
 
 data () {
   return{
-  foot: [
-    {
-      icon: 'mdi-facebook', url: 'www.facebook.com'
-    },
-    {
-      icon: 'mdi-twitter', href: 'www.facebook.com'
-    },
-    {
-      icon: 'mdi-linkedin', href: 'www.facebook.com'
-    },
-  ]
+  
   }
 }
 
