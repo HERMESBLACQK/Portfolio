@@ -42,32 +42,26 @@
           </v-col>
         </v-row>
         <v-textarea label="Message" persistent-hint="" variant="outlined" id="message" name="message"></v-textarea>
-        <v-btn color="orange" class="mt-2" type="submit" id="sendbtn" value="send">Submit Now</v-btn>    
+        <v-btn color="orange" class="mt-2" type="submit"  value="send" url="">Submit Now 
+          <v-dialog
+          v-model="dialog"
+          activator="parent"
+          width="auto"
+        >
+          <v-card>
+            <v-card-text>
+             Thanks for contacting us we will get back to you immediately
+            </v-card-text>
+            <v-card-actions>
+              <v-btn color="primary" block @click="dialog = false" url="https://portfolio-five-sepia-47.vercel.app">Close Dialog</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+        </v-btn>    
       </form>
   </v-col>
   </v-row>
-  <!-- <form ref="form" @submit.prevent="sendEmail">
-    <v-row class="mt-10">
  
-      <v-col cols="12" sm="6"> 
-       
-          <v-text-field label="Name" persistent-hint="" variant="outlined" id="name" name="name"></v-text-field>
-            </v-col>
-      <v-col cols="12" sm="6"> 
-       
-          <v-text-field label="Email" persistent-hint="" variant="outlined" id="email"></v-text-field>
-            </v-col>
-      <v-col cols="12" sm="6"> 
-       
-          <v-text-field label="Subject" persistent-hint="" variant="outlined" id="subject"></v-text-field>
-            </v-col>
-            <v-col cols="12" sm="6">
-          <v-text-field label="Phone No" persistent-hint="" variant="outlined" id="phone"></v-text-field>
-            </v-col>
-          </v-row>
-          <v-textarea label="Message" persistent-hint="" variant="outlined" id="message"></v-textarea>
-          <v-btn color="orange" class="mt-2" type="submit" id="sendbtn" value="send">Submit Now</v-btn>
-  </form> -->
 </template>
 
 <script>
@@ -79,11 +73,18 @@ export default {
       emailjs.sendForm('service_sht60cr', 'template_y6m266i', this.$refs.form, '1nB7iDS463Ze2YTnI')
         .then((result) => {
             console.log('SUCCESS!', result.text);
+           
         }, (error) => {
             console.log('FAILED...', error.text);
         });
     }
+  },
+  data () {
+    return {
+    dialog: false,
   }
+  }
+
 
 
 
