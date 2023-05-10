@@ -39,21 +39,22 @@
   </div>
 
  </v-col>
-<v-col cols="12" sm="6">
+<v-col cols="12" sm="6" class="pa-8">
   
 <h3 class="mt-16">About Me</h3>
-<div style="width: 120px;">
-<v-slider v-model="slider2" color="orange label-track-color">
+<div style="width: 120px;" >
+<v-slider v-model="slider1" color="orange label-track-color">
 
 </v-slider>
 </div>
 <h4 class="mt-n4"> I AM a Creative Web Developer</h4>
 <h4>And Designer</h4>
-<p class="text-grey">I am  detail oriented, highly organized, analytical and great with managing relationships.</p> <br>
 <p class="text-grey">I have excellent web development skills and a passion for developing web applications or improving existing one.</p> <br>
 <p class="text-grey">I am very diligent in the area of decision making and problem solving.</p> <br>
 <p class="text-grey">I love teamwork and i am always open and ready to learn from others and share ideas and views.</p> <br>
 <p class="text-grey">I have 3 years experience as a front end developer and i have worked with numerous organizations.</p>
+<p class="text-grey">I am  detail oriented, highly organized, analytical and great with managing relationships.</p> <br>
+
 </v-col>
  
 </v-row>
@@ -68,7 +69,7 @@
     <v-row>
       <v-col cols="12" sm="12">
    <div class="show text-center mt-4 w-100">
-  <h2 id="offer">What We Offer</h2>
+  <h2 id="offer">What I Offer</h2>
   <div style="width: 120px; margin: 0 auto;">
   <v-slider v-model="slider2" color="orange" class="label-track-color"></v-slider>
   </div>
@@ -87,13 +88,13 @@
 <div class="child">
 <v-btn><v-icon class="text-white " color="orange">mdi-cellphone-text</v-icon></v-btn>
 <h3 class="ml-3 mt-4">Web App Management</h3>
-<p class="text-grey ml-3 mt-4 text-caption">I am a seasoned web app <br>manager accros all platforms <br>  with 3 years experience in this particular field</p>
+<p class="text-grey ml-3 mt-4 text-caption">I am a seasoned web app <br>manager across all platforms <br>  with 3 years experience in this particular field</p>
 </div>
 
 <div class="child">
 <v-btn><v-icon class="text-white " color="orange">mdi-monitor</v-icon></v-btn>
 <h3 class="ml-3 mt-4">Web Design</h3>
-<p class="text-grey ml-3 mt-4 text-caption">Do u need a design for your  <br>dream web app? Then<br> my priority is to make your dreams and imagined web app real</p>
+<p class="text-grey ml-3 mt-4 text-caption">Do you need a design for your  <br>dream web app? Then<br> my priority is to make your dreams and imagined web app real</p>
 </div>
       </v-col>
     </v-row>
@@ -104,7 +105,7 @@
    <div class="show text-center mt-4 w-100">
   <h2 id="offer">The Technologies I work with</h2>
   <div style="width: 120px; margin: 0 auto;">
-  <v-slider v-model="slider2" color="orange" class="label-track-color"></v-slider>
+  <v-slider v-model="slider3" color="orange" class="label-track-color"></v-slider>
   </div>
 </div>
     </v-col>
@@ -138,7 +139,7 @@
    <div class="show text-center mt-4 w-100">
   <h2 id="offer">My Projects Timeline</h2>
   <div style="width: 120px; margin: 0 auto;">
-  <v-slider v-model="slider2" color="orange" class="label-track-color"></v-slider>
+  <v-slider v-model="slider4" color="orange" class="label-track-color"></v-slider>
   </div>
 </div>
 
@@ -156,52 +157,8 @@
         ></v-carousel-item>
       </v-carousel>
 </v-row>
-<v-row>
 
-<v-col cols="12" sm="4" class="pa-8" id="contact">
-  <div class="child">
-    <h1>Contact Info</h1>
-    <v-btn class="mt-10" variant="outlined"> <v-icon>mdi-map-marker</v-icon></v-btn> <br>
-    <span class="text-caption">4 apatapiti street off Futa Southgate, Akure, Ondo State, Nigeria</span> <br>
-    <v-btn class="mt-10" variant="outlined"><v-icon>mdi-phone</v-icon></v-btn> <br>
-    <span class="text-caption">(+234)9035355746</span> <br> 
-    <span class="text-caption">(+234)8116009623</span> <br>
-    <v-btn class="mt-10" variant="outlined"><v-icon>mdi-email</v-icon></v-btn> <br>
-    <span class="text-caption">Omotosolilhenxy@gmail.com</span> <br> 
-    <span class="text-caption">Dr.blacqk@gmail.com</span>
-  </div>
-</v-col>
-<v-col cols="12" sm="8" class="pa-8">
-<h1 class="mt-8">Send your message</h1>
-<v-divider></v-divider>
-<span class="text-caption">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deserunt, consequuntur debitis, veritatis similique sequi reprehenderit doloribus eligendi non optio natus in? Non magni mollitia veniam sed quidem culpa impedit?
-</span>
-<v-form method="post">
-<v-row class="mt-10">
- 
-  <v-col cols="12" sm="6"> 
-   
-      <v-text-field label="Name" persistent-hint="" variant="outlined" id="name" name="name"></v-text-field>
-        </v-col>
-  <v-col cols="12" sm="6"> 
-   
-      <v-text-field label="Email" persistent-hint="" variant="outlined" id="email"></v-text-field>
-        </v-col>
-  <v-col cols="12" sm="6"> 
-   
-      <v-text-field label="Subject" persistent-hint="" variant="outlined" id="subject"></v-text-field>
-        </v-col>
-        <v-col cols="12" sm="6">
-      <v-text-field label="Phone No" persistent-hint="" variant="outlined" id="phone"></v-text-field>
-        </v-col>
-      </v-row>
-      <v-textarea label="Message" persistent-hint="" variant="outlined" id="message"></v-textarea>
-      <v-btn color="orange" class="mt-2" type="submit" id="sendbtn">Submit Now</v-btn>
-  
-      </v-form>
-</v-col>
-</v-row>
+
 
 </v-container>
 <formSend />
@@ -231,7 +188,10 @@ methods: {
 },
 setup()  {
   return {
+    slider1: 25,
 slider2: 50,
+slider3: 75,
+slider4: 100,
     items: [
         {
           img: '/s1.png',

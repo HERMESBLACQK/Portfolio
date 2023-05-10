@@ -1,7 +1,8 @@
 <template>
-  <v-app-bar app color="black" flat class=" px-12" >
-<v-btn>
-  <v-icon color="orange" left class="mr-2"> <mdi-siganture-text class="text-decoration-line-through">hermestech</mdi-siganture-text></v-icon>
+  <v-app-bar color="black" flat app>
+<v-btn class="" @click="scroll('home')">
+  <v-icon color="orange" left class="mr-2">mdi-laptop</v-icon>
+  HERMESTECH
 </v-btn>
 <v-spacer></v-spacer>
 <div class="hidemenu">
@@ -14,7 +15,6 @@
 </div>
 <div class="showmenu pa-0" >
   <v-btn icon color="orange" dark  @click="scroll('services')">
-      <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
       services
     </v-btn>
 </div>
