@@ -13,7 +13,7 @@
 <v-btn text @click="scroll('pages')" >Pages</v-btn>
 <v-btn text @click="scroll('contact')">Contact</v-btn>
 </div>
-<div class="showmenu pa-0" >
+<div class="showmenu pa-6" >
   <v-btn icon color="orange" dark  @click="scroll('services')">
       services
     </v-btn>

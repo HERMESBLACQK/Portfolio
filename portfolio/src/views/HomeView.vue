@@ -149,13 +149,13 @@
 <v-row class="pa-8">
 
   <v-carousel hide-delimiters>
-        <v-carousel-item
-          v-for="(item,i) in items"
-          :key="i"
-          :src="item.img"
-          cover
-        ></v-carousel-item>
-      </v-carousel>
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+      
+    ></v-carousel-item>
+  </v-carousel>
 </v-row>
 
 
@@ -193,26 +193,23 @@ slider2: 50,
 slider3: 75,
 slider4: 100,
     items: [
-        {
-          img: '/s1.png',
+      {
+          src: '/2.png',
         },
         {
-          img: '/s2.png',
+          src: '/3.png',
         },
         {
-          img: '/s3.png',
+          src: '/4.png',
         },
         {
-          img: '/s4.png',
+          src: '/5.png',
         },
         {
-          img: '/s5.png',
+          src: '/6.png',
         },
         {
-          img: '/s6.png',
-        },
-        {
-          img: '/s7.png',
+          src: '/7.png',
         },
       ],
       itemscol: [
