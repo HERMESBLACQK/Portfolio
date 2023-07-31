@@ -13,10 +13,14 @@
             <a href="https://www.linkedin.com/in/omotoso-taiwo-17798a250"><v-icon> mdi-linkedin</v-icon></a>
 
           </v-btn>
+          <v-btn variant="plain" color="orange text-h6" class="mr-4" >
+            <a href="https://github.com/HERMESBLACQK"><v-icon> mdi-github</v-icon></a>
+
+          </v-btn>
         
         </v-card-text>
         <v-card-subtitle>
-          <h4> Developed With VueJs And Vuetify</h4>
+          <h4> Developed With VueJs And Vuetify by HermesTech</h4>
         </v-card-subtitle>
 
       </v-card>

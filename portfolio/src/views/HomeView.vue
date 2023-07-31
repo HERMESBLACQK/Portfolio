@@ -19,7 +19,7 @@
 </div>
       </v-col>
       <v-col cols="5" sm="6" id="headimg" class="hide">
-<div style="position: absolute; z-index: 9999;" class="mt-16">
+<div style="z-index: 9999;" class="mt-16">
 <v-img src="/mypic.jpg" contain max-height="350" :width="200">
   
 </v-img>
@@ -154,7 +154,7 @@
       :key="i"
       :src="item.src"
       
-    ></v-carousel-item>
+    >  </v-carousel-item>
   </v-carousel>
 </v-row>
 
@@ -195,6 +195,7 @@ slider4: 100,
     items: [
       {
           src: '/2.png',
+          href: 'https://xerax-project.vercel.app/',
         },
         {
           src: '/3.png',
@@ -316,7 +317,9 @@ slider4: 100,
   background-color: #f5f5f5;
   margin-top: -24px;
 }
-
+#heading{
+  border: 2px solid red;
+}
 
 @media only screen and (max-width: 1500px){
 
