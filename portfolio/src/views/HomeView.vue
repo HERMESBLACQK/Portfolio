@@ -163,8 +163,8 @@
     <v-header>
       <h2 id="offer">Browse My Projects</h2>
     </v-header>
-    <div class="browse d-flex justify-center pa-4" md="6">
-    <div class=" ma-8"  variant="outlined">
+    <div class="browse d-flex justify-space-evenly pa-4 align-center" md="6">
+    <div class=" ma-8"  variant="outlined"  image="/movie.png">
       <h4 class="text-h7 text-grey">Movie streaming web application</h4>  <a href="https://realstreams.vercel.app/" class="text-white">
         <button class="bg-orange text-white rounded pa-2 px-8">view</button>
       </a>
@@ -184,7 +184,7 @@
     </div>
 
   </div>
-  <div class="browse d-flex justify-center pa-4" md="6">
+  <div class="browse d-flex justify-space-evenly align-center pa-4" md="6">
     <div class=" ma-8"  variant="outlined">
       <h4 class="text-h7 text-grey">Interior Decoration Landing page</h4>  <a href="https://week3-lyart.vercel.app/" class="text-white">
         <button class="bg-orange text-white rounded pa-2 px-8">view</button>
@@ -279,6 +279,15 @@ slider4: 100,
         },
         {
           src: '/7.png',
+        },
+        {
+          src: '/food.png',
+        },
+        {
+          src: '/store.png',
+        },
+        {
+          src: '/movie.png',
         },
       ],
       itemscol: [
