@@ -391,7 +391,7 @@ slider4: 100,
 }
 .browse{
   display: flex;
-  border: 2px solid orange;
+  flex-direction: row;
 }
 
 @media only screen and (max-width: 1500px){
