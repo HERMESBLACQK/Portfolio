@@ -156,8 +156,57 @@
       
     >  </v-carousel-item>
   </v-carousel>
-</v-row>
 
+</v-row>
+<v-row>
+  <v-col class="show text-center mt-4 w-100" cols="12" sm="12">
+    <v-header>
+      <h2 id="offer">Browse My Projects</h2>
+    </v-header>
+    <div class="browse d-flex justify-center pa-4" md="6">
+    <div class=" ma-8"  variant="outlined">
+      <h4 class="text-h7 text-grey">Movie streaming web application</h4>  <a href="https://realstreams.vercel.app/" class="text-white">
+        <button class="bg-orange text-white rounded pa-2 px-8">view</button>
+      </a>
+     
+    </div>
+    <div class=" ma-8"  variant="outlined">
+      <h4 class="text-h7 text-grey">Online restaurant landing page</h4>  <a href="https://foodplug-swart.vercel.app/" class="text-white">
+        <button class="bg-orange text-white rounded pa-2 px-8">view</button>
+      </a>
+     
+    </div>
+    <div class=" ma-8" color="orange"  variant="outlined">
+      <h4 class="text-h7  text-grey">Ride Booking Landing page</h4>  <a href="https://taxigeao.vercel.app/" class="text-white">
+        <button class="bg-orange text-white rounded pa-2 px-8">view</button>
+      </a>
+     
+    </div>
+
+  </div>
+  <div class="browse d-flex justify-center pa-4" md="6">
+    <div class=" ma-8"  variant="outlined">
+      <h4 class="text-h7 text-grey">Interior Decoration Landing page</h4>  <a href="https://week3-lyart.vercel.app/" class="text-white">
+        <button class="bg-orange text-white rounded pa-2 px-8">view</button>
+      </a>
+     
+    </div>
+    <div class=" ma-8"  variant="outlined">
+      <h4 class="text-h7 text-grey">Online clothing Store</h4>  <a href="https://fasttrackstore.vercel.app/" class="text-white">
+        <button class="bg-orange text-white rounded pa-2 px-8">view</button>
+      </a>
+     
+    </div>
+    <div class=" ma-8"  variant="outlined">
+      <h4 class="text-h7 text-grey">Tourist Landing page</h4>  <a href="https://xerax-project.vercel.app/" class="text-white">
+        <button class="bg-orange text-white rounded pa-2 px-8">view</button>
+      </a>
+     
+    </div>
+  </div>
+
+  </v-col>
+</v-row>
 
 
 </v-container>
@@ -179,6 +228,25 @@ components: {
   formSend
 
 },
+data: () => ({
+      item: [
+        {
+          title: 'Dashboard',
+          disabled: false,
+          href: 'breadcrumbs_dashboard',
+        },
+        {
+          title: 'Link 1',
+          disabled: false,
+          href: 'breadcrumbs_link_1',
+        },
+        {
+          title: 'Link 2',
+          disabled: false,
+          href: 'breadcrumbs_link_2',
+        },
+      ],
+    }),
 methods: {
   scroll(refName) {
     const element = document.getElementById(refName);
@@ -235,7 +303,8 @@ slider4: 100,
         {
           img: '/vuejs.png'
         },
-      ]
+      ],
+
   }
 }
 
@@ -355,7 +424,9 @@ slider4: 100,
 .showmenu{
   display: none;
 }
-
+.browse{
+  flex-direction: column;
+}
 
 
 }
