@@ -389,6 +389,9 @@ slider4: 100,
 #heading{
   border: 2px solid red;
 }
+.browse{
+  display: flex;
+}
 
 @media only screen and (max-width: 1500px){
 
